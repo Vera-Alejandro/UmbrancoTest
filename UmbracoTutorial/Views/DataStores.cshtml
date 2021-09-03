@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.DataStores>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<!DOCTYPE HTML>
+
+<html>
+    <div>
+        <p>Add File</p>
+        <div>@Model.Value("uploadFile")</div>
+    </div>
+    <div>
+        @Model.Value("directory")
+    </div>
+</html>

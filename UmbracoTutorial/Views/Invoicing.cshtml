@@ -1,0 +1,14 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Invoicing>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<!DOCTYPE HTML>
+<html>
+    <div>
+        <p>
+            @Model.Value("invoicingContent")
+        </p>
+    </div>
+</html>
